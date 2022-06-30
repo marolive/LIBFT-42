@@ -15,9 +15,9 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*a;
-	char	count;
+	size_t	count;
 
-	if (!s1)
+	if (!s1 || !s2)
 		return (NULL);
 	count = ft_strlen(s1) + ft_strlen(s2);
 	a = malloc(count + 1);
